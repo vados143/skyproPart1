@@ -95,6 +95,28 @@ public class Main {
         System.out.println("в среднем потребуется = " + avarageWeight + " дней.");
 
 
-        int go = 9;
+        int salaryMasha = 67_760;
+        int salaryDenis = 83_690;
+        int salaryKristina = 76_320;
+        double percent = 0.1;
+        int years = 12;
+        double salaryMashaWithPercent = salaryMasha + (salaryMasha * percent);
+        double salaryDenisWithPercent = salaryDenis + (salaryDenis * percent);
+        double salaryKristinaWithPercent = salaryKristina + (salaryKristina * percent);
+        int salaryMashaInYear = salaryMasha * years;
+        int salaryDenisInYear = salaryDenis * years;
+        int salaryKristinaInYear = salaryKristina * years;
+        double salaryMashaInYearWithPercent = salaryMashaWithPercent * years;
+        double salaryDenisInYearWithPercent = salaryDenisWithPercent * years;
+        double salaryKristinaInYearWithPercent = salaryKristinaWithPercent * years;
+        double differenceSalaryMasha = salaryMashaInYearWithPercent - salaryMashaInYear;
+        double differenceSalaryDenis = salaryDenisInYearWithPercent - salaryDenisInYear;
+        double differenceSalaryKristina = salaryKristinaInYearWithPercent - salaryKristinaInYear;
+        System.out.println("Маша теперь получает " + salaryMashaWithPercent + " рублей. Годовой доход вырос на "
+                + differenceSalaryMasha + " рубль.");
+        System.out.println("Денис теперь получает " + salaryDenisWithPercent + " рублей. Годовой доход вырос на "
+                + differenceSalaryDenis + " рублей.");
+        System.out.println("Кристина теперь получает " + salaryKristinaWithPercent + " рублей. Годовой доход вырос на "
+                + differenceSalaryKristina + " рубля.");
     }
 }
