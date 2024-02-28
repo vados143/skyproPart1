@@ -95,6 +95,6 @@ public class Main {
         System.out.println("в среднем потребуется = " + avarageWeight + " дней.");
 
 
-
+        int go = 9;
     }
 }
